@@ -1,11 +1,8 @@
-package model;
-
-import java.time.LocalDate;
+package com.supermarket.ApiRestSupermaket.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,17 +11,16 @@ import lombok.Setter;
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Venta {
+public class Producto {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	private Long id;
-	private LocalDate fecha; 
-	private String estado;
+	private String nombre;
+	private String categoria;
+	private Double precio;
+	private int cantidad;
 	
-	@ManyToOne
-	private Sucursal sucursal;
-	
-	
+
 }

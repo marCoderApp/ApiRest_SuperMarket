@@ -9,5 +9,5 @@ public class ApiRestSupermaketApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiRestSupermaketApplication.class, args);
 	}
-
+    
 }
