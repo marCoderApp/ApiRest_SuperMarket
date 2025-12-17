@@ -50,6 +50,9 @@ public class ProductoService implements IProductoService {
 
     @Override
     public void eliminarProducto(Long id) {
-
+            if(!repo.existsById(id)){
+                throw new NotFoundException("El producto no existe");
+            }
+            repo.deleteById(id);
     }
 }

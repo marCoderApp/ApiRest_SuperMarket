@@ -21,6 +21,7 @@ public class Venta {
 	private Long id;
 	private LocalDate fecha; 
 	private String estado;
+	private Double total;
 	
 	@ManyToOne
 	private Sucursal sucursal;
