@@ -13,7 +13,7 @@ import lombok.Setter;
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Entity
 public class Venta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
