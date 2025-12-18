@@ -21,6 +21,7 @@ public class Mapper {
                     .nombre(producto.getNombre())
                     .categoria(producto.getCategoria())
                     .precio(producto.getPrecio())
+                    .cantidad(producto.getCantidad())
                     .build();
         }
     //Mapeo de Sucursal

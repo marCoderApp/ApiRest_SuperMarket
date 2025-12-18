@@ -69,6 +69,7 @@ public class VentaService implements IVentaService{
         //Lista de detalles
         List<DetalleVenta> detalles = new ArrayList<>();
 
+        Double totalCalculado = 0.0;
         for (DetalleVentaDTO detDTO : ventaDTO.getDetalle()) {
             Producto prod = productoRepository.findByNombre(detDTO.getNombreProd()).orElseThrow(null);
             if (prod == null) throw new NotFoundException("El producto no existe:" + detDTO.getNombreProd()) ;
@@ -81,11 +82,12 @@ public class VentaService implements IVentaService{
             det.setVenta(vent);
             detalles.add(det);
 
+            totalCalculado = totalCalculado + (det.getCantProd() * det.getPrecio());
             }
 
         //Seteamos la lista de detalles venta
         vent.setDetalle(detalles);
-        ventaRepo.save(vent);
+        vent = ventaRepo.save(vent);
 
         return Mapper.toDTO(vent);
     }
