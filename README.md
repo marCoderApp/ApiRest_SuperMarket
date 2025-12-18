@@ -19,9 +19,32 @@ El proyecto sigue una arquitectura en capas:
 - DTOs: objetos de transferencia de datos.
 - Entities: modelos persistentes.
 
+Como ejecutar? 
+- 1. Clonar el repositorio:
+   git clone https://github.com/usuario/proyecto.git
+
+2. Configurar la base de datos en application.properties
+
+3. Ejecutar:
+   mvn spring-boot:run
+
+ENDPOINTS
 ### Productos
 - GET /api/productos
 - GET /api/productos/{id}
 - POST /api/productos
 - PUT /api/productos/{id}
 - DELETE /api/productos/{id}
+
+### Ventas
+- GET /api/ventas
+- POST /api/ventas
+- PUT /api/vemtas/{id}
+- DELETE /api/ventas/{id}
+
+### Sucursales
+- GET /api/sucursales
+- POST /api/sucursales
+- PUT /api/sucursales/{id}
+- DELETE /api/sucursales/{id}
+
