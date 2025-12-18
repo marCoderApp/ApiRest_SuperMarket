@@ -4,11 +4,11 @@ Esta es una API REST desarrollada con Spring Boot para gestionar productos.
 Permite crear, listar, actualizar y eliminar productos utilizando un modelo basado en DTOs y servicios.
 
 Tecnologías:
-- Java 17 (o la versión que uses)
+- Java 17 
 - Spring Boot
 - Spring Web
 - Spring Data JPA
-- MySQL / H2 / PostgreSQL (lo que uses)
+- MySQL / H2 / 
 - Maven o Gradle
 
 Arquitectura: 
@@ -20,8 +20,9 @@ El proyecto sigue una arquitectura en capas:
 - Entities: modelos persistentes.
 
 Como ejecutar? 
-- 1. Clonar el repositorio:
-   git clone https://github.com/usuario/proyecto.git
+
+1. Clonar el repositorio:
+   git clone https://github.com/marCoderApp/ApiRest_SuperMarket
 
 2. Configurar la base de datos en application.properties
 
