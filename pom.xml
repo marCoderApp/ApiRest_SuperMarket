@@ -12,7 +12,7 @@
 
     <groupId>com.supermarket</groupId>
     <artifactId>ApiRestSupermaket</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>ApiRestSupermaket</name>
     <description>Api rest para un supermercado.</description>
 
