@@ -1,4 +1,4 @@
-# API de Gestión de Productos – Spring Boot
+# API de Gestión de SuperMercado – Spring Boot
 
 Esta es una API REST desarrollada con Spring Boot para gestionar productos. 
 Permite crear, listar, actualizar y eliminar productos utilizando un modelo basado en DTOs y servicios.
